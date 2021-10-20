@@ -19,12 +19,15 @@ body {
      padding: 10px;
      overflow: hidden;
      display: flex;
-     justify-content: left;
+    
  }
-
+ 
+     
  nav>ul>li a {
-     display: block;
-     color: honeydew;
-     text-align: center;
-     margin 8px;
+    float: left;
+    padding: 10px 10px; 
+    display: inline-flex;
+    color: darkred;
+    font-weight: bold;
+    margin: 8px;
  }
