@@ -1,4 +1,30 @@
+/*Main area */
 body {
     background-color: black;
 }
 
+/*top menu */
+#mainheader {
+    background-color: gray;
+}
+ nav {
+     height: 60px;
+     width: 80%;
+     margin: 0 auto 20px;
+ }
+
+ nav>ul {
+     list-style-type: none;
+     margin:  0;
+     padding: 10px;
+     overflow: hidden;
+     display: flex;
+     justify-content: left;
+ }
+
+ nav>ul>li a {
+     display: block;
+     color: honeydew;
+     text-align: center;
+     margin 8px;
+ }
