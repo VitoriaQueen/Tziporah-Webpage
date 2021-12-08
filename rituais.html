@@ -14,7 +14,7 @@
                 <a href="#" class="nav-brand">Tziporah Metatron</a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="rituais.html">Rituais</a></li>
+                    <li class="nav-item"><a href="rituais.html">Seu Signo</a></li>
                     <li class="nav-item"><a href="contato.html">Contato</a></li>
                 </ul>
                 <div class="hamburger">
@@ -25,14 +25,33 @@
             </nav>
 
         </header>
-        <script src="script.js"></script> 
+
         <main class="main">
-            <h2>Bem-Vindo(a)</h2>
+            
+            <h1>Bem-Vindo(a)</h1>
+            <br>
+        
+        <form name="zodform">
+            <Fieldset>
+            <legend>Dados</legend>
+            <Label>Dia do seu nascimento</Label>
+            <input type="number" name="dia" max="31" min="1" step="" required>
+            
+            <label>Mes do seu nacimento</label>
+            <input type="number" name="mes" max="12" min="1" required>
+
+            <input  value="pesquisar" type="button" onclick="signo();">
+            <br>
+            <img id="zodImages" src="/bsigns/zodsignspic.jpg" alt="Imagem dos signos dos zodiaco" width="15%">
+            </Fieldset>
+        </form>
+
+
         </main>
         <script src="script.js"></script>
         
         <footer>
-            <p>| &copy;2021 Tzipora Metatron |</p>
+            <p>| &copy;<script>document.write(new Date()).getFullYear;</script> Tzipora Metatron |</p>
         </footer>   
     </body>
 </html>
