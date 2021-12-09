@@ -75,9 +75,8 @@ main {
     background-color:papayawhip;
     margin: 70px auto 0px auto;
     padding: 30px 20px;
-    /*min-height: calc(100vh -70px - 200px);*/
 }
-
+/* attributes for pc & text on main page */
 main.mainHome {
     display: block;
     justify-content: center;
@@ -86,13 +85,12 @@ main.mainHome {
 }
 
 #textMain {
-    font-family: Brush Script MT,
-     Brush Script Std, cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      padding-left: 50px;
      font-weight: bold;
-     color: rgb(27, 26, 26);
-     text-shadow: -1px 0 rgb(157, 56, 190), 
-     0 1px rgb(157, 56, 190), 1px 0 rgb(157, 56, 90), 0 -1px black;
+     color: rgb(128, 11, 167);
+     text-shadow: -1px 0 rgb(0, 0, 0), 
+     0 1px rgb(0, 0, 0), 1px 0 rgb(12, 5, 7), 0 -1px black;
     margin-top: 0;
     font-size: 1.8em;
     margin-left: auto;
@@ -104,8 +102,8 @@ main.mainHome {
      padding-left: 50px;
      font-weight: bold;
      color: rgb(27, 26, 26);
-     text-shadow: -1px 0 rgb(157, 56, 190), 
-     0 1px rgb(157, 56, 190), 1px 0 rgb(157, 56, 90), 0 -1px black;
+     text-shadow: -1px 0 rgb(157, 56, 90), 
+     0 1px rgb(157, 56, 90), 1px 0 rgb(157, 56, 90), 0 -1px black;
     margin-top: 0;
     font-size: 2.0em;
     font-weight: bold;
@@ -126,12 +124,8 @@ body {
 	flex-direction: column;
     
 }
-.tarotTitle {
-    font-size: .7em;
-    right: 50%;
-}
 
-/*----------Table for birth sign page--------------*/
+/* attributes for table for birth sign page--------------*/
 
 .horoscope {
     margin-top: 10px;
@@ -179,16 +173,13 @@ input[type="button"] {
 
 #zodInfo {
     font-family: 'Times New Roman', Times, serif;
-   /* text-shadow: 1px 0 0 #000,
-    0 -1px 0 #000, 0 1px 0 #000,
-    -1px 0 0 #000;*/
     color: #8a30a8;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 footer {
-    background-color: #6f2886;
+    background-color: rgb(111, 40, 134);
     color: burlywood;
     font-size: 0.9em;
     font-weight: bold;
@@ -201,7 +192,7 @@ footer > p {
     text-align: center;
 }
     
-/* media query */
+/* media query  */
 @media(max-width:768px){
     .hamburger {
         display: block;
