@@ -6,13 +6,25 @@
         <meta name="author" content="Business page for Tziporah Metatron">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <link rel="icon" type="img/jpg" href="images/tziporahicon.jpg">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
         <style>
             /* Code for flipping cards in gallery*/
         
 
-        main {
+            main.main {
+            width: 70vw;
             display: flex;
+            background-color:papayawhip;
+            margin: 70px auto 0px auto;
+            padding: 30px 20px;
+            /*min-height: calc(100vh -70px - 200px);*/
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
         .container {
             display: grid;
@@ -47,7 +59,7 @@
             bottom: 0%;
             background: wheat;
             color: black;
-            padding: 15px;
+            padding: 5px;
             transform: perspective(600px) rotateY(180deg);
             transition: transform .5s linear 0s;
             backface-visibility: hidden;
@@ -68,7 +80,12 @@
             transform:perspective(600px) rotateY(0deg);
             
         }
-
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
         @media(max-width:768px) {
             .container {
                 grid-template-columns: repeat(2,1fr);
@@ -112,7 +129,7 @@
         </header>
 
         <main class="main"> 
-            <h2>Tarot</h2>
+            <h2>TAROT</h2>
             
             <div class="container">
                 <div class="container1" >
@@ -123,9 +140,8 @@
                     <div class="back">
                         <h2>A Estrela</h2>
 
-                        <p>A Estrela no Tarot indica ajuda espiritual para sair de uma situação.
-                            Assim, todo o medo, insegurança e tristeza ficarão para trás para 
-                            dar lugar à esperança, realização e felicidade.
+                        <p>A Estrela indica ajuda espiritual para sair de uma situação.
+                            Assim, todo o medo, insegurança e tristeza ficarão para trás dando lugar à esperança.
                         </p>
                     </div>
                 </div>
@@ -136,12 +152,11 @@
                         <h2>Os Amantes</h2>
                     </div>
                     <div class="back">
-                        <h2>Os Amantes</h2>
-                        <p>Significados simbólicos
-                            Envolvimento afetivo, disposição amorosa, sentimentos.
+                        <h2>Amantes</h2>
+                        <p>Simbolizam
+                            Envolvimento afetivo, disposição amorosa.
                             Matrimônio, união. Integração ao poder gerador do universo.
-                            Livre arbítrio, escolha. Maioridade.
-                            Encadeamento, equilíbrio. Luta, antagonismo</p>
+                            </p>
                     </div>
                 </div>
                 
@@ -151,9 +166,9 @@
                         <h2>A Imperatriz</h2>
                     </div>
                     <div class="back">
-                        <h2>A Imperatriz</h2>
-                        <p>A Imperatriz é a personificação do poder feminino. Ela indica a necessidade de abraçar
-                             nosso lado feminino, confiar em nossa intuição e priorizar nossas emoções e paixões sobre o pensamento lógico.</p>
+                        <h2>Imperatriz</h2>
+                        <p>Personificação do poder feminino. Indica a necessidade de abraçar
+                             nosso lado feminino, confiar em nossa intuição e priorizar nossas emoções.</p>
                     </div>
                 </div>
 
@@ -164,8 +179,8 @@
                     </div>
                     <div class="back">
                         <h2>Temperança</h2>
-                        <p>A Temperança traz a conexão com o mundo espiritual. A água que
-                             flui de um vaso para o outro é o símbolo do fluxo da vida e 
+                        <p>Tras conexão com o mundo espiritual. A água que
+                             flui simboliza do fluxo da vida e 
                              do movimento que vive a espiritualidade do homem.</p>
                     </div>
                 </div>

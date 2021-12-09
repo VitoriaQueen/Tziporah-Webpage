@@ -78,16 +78,17 @@ main {
     /*min-height: calc(100vh -70px - 200px);*/
 }
 
+
 body {
     display: flex;
 	justify-content: center;
 	flex-direction: column;
+    
 }
 .tarotTitle {
     font-size: .7em;
     right: 50%;
 }
-
 
 /*------------------------*/
 .horoscope {
@@ -116,7 +117,7 @@ legend {
 
 fieldset {
     padding: 10px;
-    align-items: center;
+    
     
 }
 
@@ -152,7 +153,6 @@ footer {
     padding: 10px;
     clear: both;
     position: relative;
-    
 }
 
 footer > p {
