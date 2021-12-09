@@ -71,7 +71,7 @@ html{
 }
 main {
     width: 70vw;
-    display: flex;
+    display: block;
     background-color:papayawhip;
     margin: 70px auto 0px auto;
     padding: 30px 20px;
