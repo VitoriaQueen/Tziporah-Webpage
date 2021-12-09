@@ -80,9 +80,6 @@ main {
 
 main.mainHome {
     display: block;
-    align-content: center;
-    margin-right: auto;
-    margin-left: auto;
     justify-content: center;
 
 }
@@ -90,6 +87,7 @@ main.mainHome {
 #rightpic {
     width: 50%;
     align-content: center;
+    right: 50%;
 }
 
 body {
@@ -103,7 +101,8 @@ body {
     right: 50%;
 }
 
-/*------------------------*/
+/*----------Table for birth sign page--------------*/
+
 .horoscope {
     margin-top: 10px;
     background-color: papayawhip;
