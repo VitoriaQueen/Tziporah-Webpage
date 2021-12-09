@@ -9,19 +9,22 @@
         <link rel="icon" type="img/jpg" href="./Images/tziporahicon.jpg">
         <link rel="stylesheet" type="text/css" href="./css/styles.css">
         <style>
-           
+           html {
+         width: 100%;
+         background-image: url(background2.jpg);
+        }
         /* Code for flipping cards in gallery*/
-
             main.main {
             width: 70vw;
             display: flex;
             background-color:papayawhip;
             margin: 70px auto 0px auto;
             padding: 30px 20px;
-            /*min-height: calc(100vh -70px - 200px);*/
         }
 
         body {
+            width: 100%;
+            background-image: url(background2.jpg);
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -86,6 +89,7 @@
             bottom: 0;
             width: 100%;
         }
+      /* layout change for cards in smaller screens*/  
         @media(max-width:768px) {
             .container {
                 grid-template-columns: repeat(2,1fr);
@@ -109,24 +113,24 @@
             
 </style>
     </head>
-    <body>
-        <header>
+        <body>
+            <header>
     
-            <nav class="navbar">
-                <a href="#" class="nav-brand">Tziporah Metatron</a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="signos.html">Seu Signo</a></li>
-                    <li class="nav-item"><a href="tarot.html">Tarot</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+                <nav class="navbar">
+                    <a href="#" class="nav-brand">Tziporah Metatron</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="signos.html">Seu Signo</a></li>
+                        <li class="nav-item"><a href="tarot.html">Tarot</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
 
-        </header>
+            </header>
 
         <main class="main"> 
             <h2>TAROT</h2>
@@ -184,14 +188,13 @@
                              do movimento que vive a espiritualidade do homem.</p>
                     </div>
                 </div>
-
             </div>
 
         </main>
         <script type="text/javascript" src="script.js"></script>
         
         <footer>
-            <p>| &copy;<script>document.write(new Date()).getFullYear;</script> Tzipora Metatron |</p>
+          <p>| &copy;<script>document.write(new Date()).getFullYear;</script> Tzipora Metatron |</p>
         </footer>   
     </body>
 </html>
