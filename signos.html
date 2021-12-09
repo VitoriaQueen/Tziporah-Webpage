@@ -28,25 +28,38 @@
 
         <main class="main">
             
-            <h1>Bem-Vindo(a)</h1>
+            <h2>Bem-Vindo(a)</h2>
+            <p><i></i></p>
             <br>
-        
+        <div class="horoscope">
         <form name="zodform">
-            <Fieldset>
-            <legend>Dados</legend>
-            <Label>Dia do seu nascimento</Label>
-            <input type="number" name="dia" max="31" min="1" step="" required>
-            
-            <label>Mes do seu nacimento</label>
-            <input type="number" name="mes" max="12" min="1" required>
 
-            <input  value="pesquisar" type="button" onclick="signo();">
+            <Fieldset>
+            <legend>Leia Sobre o Seu Signo</legend>
+            <p><Label>Dia do seu nascimento</Label>
+            <input type="number" name="dia" max="31" min="1" step="" required>
+            </p> 
+
+            <p><label>Mês do seu nacimento</label>
+            <input type="number" name="mes" max="12" min="1" required>
+            </p>
+            
+            <p>
+            <input  value="Pesquisar" type="button" onclick="signo();">
+            </p>
             <br>
-            <img id="zodImages" src="/bsigns/zodsignspic.jpg" alt="Imagem dos signos dos zodiaco" width="15%">
+
+            <p>
+                <img id="zodImages" src="/bsigns/zodsignspic.jpg" alt="Imagem dos signos dos zodiaco">
+                <p id="zodInfo"></p>
+                
+            </p>
+
             </Fieldset>
         </form>
+         </div>
 
-
+        
         </main>
         <script src="script.js"></script>
         

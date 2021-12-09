@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tziporah Metatron</title>
+        <meta name="author" content="Business page for Tziporah Metatron">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <style>
+            /* Code for flipping cards in gallery*/
+
+.container {
+    display: grid;
+    width: 1000%;
+    margin: 40px auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.container1 {
+    position: relative;
+}
+
+.front h2 {
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    font-size: 1rem;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    background: wheat;
+    color: black;
+    padding: 15px;
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform .5s linear 0s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front {
+    color: black ;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform .5s linear 0s;
+}
+
+.container1:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.container1:hover > .back {
+    transform:perspective(600px) rotateY(0deg);
+    
+}
+
+@media(max-width:768px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .front > h2 {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 120px;
+    }
+
+    .front > h2 {
+        display: none;
+    }
+}
+            
+</style>
+    </head>
+    <body>
+        <header>
+    
+            <nav class="navbar">
+                <a href="#" class="nav-brand">Tziporah Metatron</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="rituais.html">Seu Signo</a></li>
+                    <li class="nav-item"><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="main"> 
+            
+            <div class="container">
+                <div class="container1" >
+                    <div class="front">
+                        <img src="/Images/star.jpg" alt="">
+                        <h2>A Estrela</h2>
+                    </div>
+                    <div class="back">
+                        <h2>A Estrela</h2>
+
+                        <p>A Estrela no Tarot indica ajuda espiritual para sair de uma situação.
+                            Assim, todo o medo, insegurança e tristeza ficarão para trás para 
+                            dar lugar à esperança, realização e felicidade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container1" >
+                    <div class="front">
+                        <img src="/Images/lovers.jpg" alt="">
+                        <h2>Os Amantes</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Os Amantes</h2>
+                        <p>Significados simbólicos
+                            Envolvimento afetivo, disposição amorosa, sentimentos.
+                            Matrimônio, união. Integração ao poder gerador do universo.
+                            Livre arbítrio, escolha. Maioridade.
+                            Encadeamento, equilíbrio. Luta, antagonismo</p>
+                    </div>
+                </div>
+                
+                <div class="container1" >
+                    <div class="front">
+                        <img src="/Images/empress.jpg" alt="">
+                        <h2>A Imperatriz</h2>
+                    </div>
+                    <div class="back">
+                        <h2>A Imperatriz</h2>
+                        <p>A Imperatriz é a personificação do poder feminino. Ela indica a necessidade de abraçar
+                             nosso lado feminino, confiar em nossa intuição e priorizar nossas emoções e paixões sobre o pensamento lógico.</p>
+                    </div>
+                </div>
+
+                <div class="container1" >
+                    <div class="front">
+                        <img src="/Images/temperance.jpg" alt="">
+                        <h2>Temperança</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Temperança</h2>
+                        <p>A Temperança traz a conexão com o mundo espiritual. A água que
+                             flui de um vaso para o outro é o símbolo do fluxo da vida e 
+                             do movimento que vive a espiritualidade do homem.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+
+
+
+        </main>
+        <script src="script.js"></script>
+        
+        <footer>
+            <p>| &copy;<script>document.write(new Date()).getFullYear;</script> Tzipora Metatron |</p>
+        </footer>   
+    </body>
+</html>
