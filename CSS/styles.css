@@ -66,7 +66,7 @@ a {
 html{
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
-    background-image: url(/Images/background2.jpg);
+    background-image: url(/background2.jpg);
     
 }
 main {
@@ -78,6 +78,19 @@ main {
     /*min-height: calc(100vh -70px - 200px);*/
 }
 
+main.mainHome {
+    display: block;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
+}
+
+#rightpic {
+    width: 50%;
+    align-content: center;
+}
 
 body {
     display: flex;
